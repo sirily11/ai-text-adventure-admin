@@ -11,6 +11,15 @@
 		CDB1BA2D29D5278C007F7AED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA2C29D5278C007F7AED /* ContentView.swift */; };
 		CDB1BA2F29D5278D007F7AED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB1BA2E29D5278D007F7AED /* Assets.xcassets */; };
 		CDB1BA3329D5278D007F7AED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB1BA3229D5278D007F7AED /* Preview Assets.xcassets */; };
+		CDB1BA3C29D527D5007F7AED /* configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA3B29D527D5007F7AED /* configs.swift */; };
+		CDB1BA3E29D52809007F7AED /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA3D29D52809007F7AED /* SignInView.swift */; };
+		CDB1BA4029D528CC007F7AED /* PromptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA3F29D528CC007F7AED /* PromptService.swift */; };
+		CDB1BA4329D52C67007F7AED /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CDB1BA4229D52C67007F7AED /* Alamofire */; };
+		CDB1BA4629D533DC007F7AED /* PromptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA4529D533DC007F7AED /* PromptModel.swift */; };
+		CDB1BA4829D53D3C007F7AED /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA4729D53D3C007F7AED /* PromptView.swift */; };
+		CDB1BA4A29D54065007F7AED /* PromptForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA4929D54065007F7AED /* PromptForm.swift */; };
+		CDB1BA4C29D55E7D007F7AED /* PromptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA4B29D55E7D007F7AED /* PromptDetailView.swift */; };
+		CDB1BA4E29D5660C007F7AED /* CreatePromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB1BA4D29D5660C007F7AED /* CreatePromptView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,14 @@
 		CDB1BA2E29D5278D007F7AED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDB1BA3029D5278D007F7AED /* ai_text_adventure_admin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ai_text_adventure_admin.entitlements; sourceTree = "<group>"; };
 		CDB1BA3229D5278D007F7AED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CDB1BA3B29D527D5007F7AED /* configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configs.swift; sourceTree = "<group>"; };
+		CDB1BA3D29D52809007F7AED /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		CDB1BA3F29D528CC007F7AED /* PromptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptService.swift; sourceTree = "<group>"; };
+		CDB1BA4529D533DC007F7AED /* PromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptModel.swift; sourceTree = "<group>"; };
+		CDB1BA4729D53D3C007F7AED /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		CDB1BA4929D54065007F7AED /* PromptForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptForm.swift; sourceTree = "<group>"; };
+		CDB1BA4B29D55E7D007F7AED /* PromptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptDetailView.swift; sourceTree = "<group>"; };
+		CDB1BA4D29D5660C007F7AED /* CreatePromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePromptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB1BA4329D52C67007F7AED /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +70,10 @@
 		CDB1BA2929D5278C007F7AED /* ai-text-adventure-admin */ = {
 			isa = PBXGroup;
 			children = (
+				CDB1BA3B29D527D5007F7AED /* configs.swift */,
+				CDB1BA4429D533CC007F7AED /* Models */,
+				CDB1BA3A29D527C2007F7AED /* Services */,
+				CDB1BA3929D527B5007F7AED /* Views */,
 				CDB1BA2A29D5278C007F7AED /* ai_text_adventure_adminApp.swift */,
 				CDB1BA2C29D5278C007F7AED /* ContentView.swift */,
 				CDB1BA2E29D5278D007F7AED /* Assets.xcassets */,
@@ -67,6 +89,34 @@
 				CDB1BA3229D5278D007F7AED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CDB1BA3929D527B5007F7AED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDB1BA3D29D52809007F7AED /* SignInView.swift */,
+				CDB1BA4729D53D3C007F7AED /* PromptView.swift */,
+				CDB1BA4929D54065007F7AED /* PromptForm.swift */,
+				CDB1BA4B29D55E7D007F7AED /* PromptDetailView.swift */,
+				CDB1BA4D29D5660C007F7AED /* CreatePromptView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDB1BA3A29D527C2007F7AED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDB1BA3F29D528CC007F7AED /* PromptService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDB1BA4429D533CC007F7AED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDB1BA4529D533DC007F7AED /* PromptModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +135,9 @@
 			dependencies = (
 			);
 			name = "ai-text-adventure-admin";
+			packageProductDependencies = (
+				CDB1BA4229D52C67007F7AED /* Alamofire */,
+			);
 			productName = "ai-text-adventure-admin";
 			productReference = CDB1BA2729D5278C007F7AED /* ai-text-adventure-admin.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +166,9 @@
 				Base,
 			);
 			mainGroup = CDB1BA1E29D5278C007F7AED;
+			packageReferences = (
+				CDB1BA4129D52C67007F7AED /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CDB1BA2829D5278C007F7AED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB1BA4C29D55E7D007F7AED /* PromptDetailView.swift in Sources */,
+				CDB1BA4829D53D3C007F7AED /* PromptView.swift in Sources */,
+				CDB1BA4A29D54065007F7AED /* PromptForm.swift in Sources */,
+				CDB1BA4029D528CC007F7AED /* PromptService.swift in Sources */,
+				CDB1BA4629D533DC007F7AED /* PromptModel.swift in Sources */,
+				CDB1BA3C29D527D5007F7AED /* configs.swift in Sources */,
 				CDB1BA2D29D5278C007F7AED /* ContentView.swift in Sources */,
+				CDB1BA3E29D52809007F7AED /* SignInView.swift in Sources */,
+				CDB1BA4E29D5660C007F7AED /* CreatePromptView.swift in Sources */,
 				CDB1BA2B29D5278C007F7AED /* ai_text_adventure_adminApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDB1BA4129D52C67007F7AED /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDB1BA4229D52C67007F7AED /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDB1BA4129D52C67007F7AED /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDB1BA1F29D5278C007F7AED /* Project object */;
 }

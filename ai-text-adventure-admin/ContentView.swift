@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("signedIn") var signedIn: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+//            if !signedIn {
+//                SignInView()
+//            }
+            if signedIn {
+                PromptView()
+            }
+            Text("Admin")
         }
-        .padding()
     }
 }
 

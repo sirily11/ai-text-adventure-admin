@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ai_text_adventure_adminApp: App {
+    @StateObject var promptModel: PromptModel = PromptModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(promptModel)
         }
     }
 }
