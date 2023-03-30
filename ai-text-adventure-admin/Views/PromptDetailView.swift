@@ -14,8 +14,12 @@ struct PromptDetailView: View {
     
     var body: some View {
         VStack {
-            PromptForm(prompt: promptModel.prompt) { value in
-                await update(promptValue: value)
+            if promptModel.isLoading {
+                ProgressView()
+            } else {
+                PromptForm(prompt: promptModel.prompt) { value in
+                    await update(promptValue: value)
+                }
             }
         }
         .navigationTitle(promptModel.isLoading ? "Loading" : prompt)

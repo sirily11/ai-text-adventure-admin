@@ -7,5 +7,5 @@
 
 import Foundation
 
-let apiEndpoint = "http://localhost:8000"
-//let apiEndpoint = "https://api.chatgpt-hk.net"
+//let apiEndpoint = "http://localhost:8000"
+let apiEndpoint = "https://api.chatgpt-hk.net"
