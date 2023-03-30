@@ -24,7 +24,7 @@ struct ListPromptDto: Codable {
 struct GetPromptDto: Codable {
     let name: String
     let prompt: String
-    let firstUserMessage: String
+    let firstUserMessage: String?
 
     enum CodingKeys: String, CodingKey {
         case name
@@ -36,7 +36,7 @@ struct GetPromptDto: Codable {
 struct CreatePromptDto: Codable {
     let name: String
     let prompt: String
-    let firstUserMessage: String
+    let firstUserMessage: String?
 
     enum CodingKeys: String, CodingKey {
         case name

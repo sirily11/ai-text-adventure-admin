@@ -41,6 +41,7 @@ class PromptModel: ObservableObject {
     @MainActor
     func fetchPrompt(by name: String) async {
         isLoading = true
+        self.prompt = nil
         do {
             prompt = try await service.fetchPrompt(by: name)
         } catch {

@@ -20,7 +20,7 @@ struct PromptForm: View {
         if let prompt = prompt {
             self._name = .init(initialValue: prompt.name)
             self._prompt = .init(initialValue: prompt.prompt)
-            self._firstUserMessage = .init(initialValue: prompt.firstUserMessage)
+            self._firstUserMessage = .init(initialValue: prompt.firstUserMessage ?? "")
         }
         self.onSubmit = onSubmit
     }
@@ -34,7 +34,7 @@ struct PromptForm: View {
             HStack {
                 Spacer()
                 Button {
-                    let prompt = CreatePromptDto(name: name, prompt: prompt, firstUserMessage: firstUserMessage)
+                    let prompt = CreatePromptDto(name: name, prompt: prompt, firstUserMessage: firstUserMessage.count == 0 ? nil: firstUserMessage)
                     Task {
                         isSubmitting = true
                         do {
