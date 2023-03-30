@@ -10,11 +10,19 @@ import SwiftUI
 @main
 struct ai_text_adventure_adminApp: App {
     @StateObject var promptModel: PromptModel = PromptModel()
+    @AppStorage("signedIn") var signedIn: Bool = false
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(promptModel)
+        }
+        MenuBarExtra("Auth") {
+            if signedIn {
+                Button("Sign Out") {
+                    promptModel.signOut()
+                }
+            }
         }
     }
 }

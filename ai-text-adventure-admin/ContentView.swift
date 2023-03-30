@@ -12,13 +12,18 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-//            if !signedIn {
-//                SignInView()
-//            }
-            if signedIn {
-                PromptView()
+            Group {
+                if !signedIn {
+                    SignInView()
+                }
+                if signedIn {
+                    PromptView()
+                }
             }
-            Text("Admin")
+            
+            if signedIn {
+                Text("Admin")
+            }
         }
     }
 }

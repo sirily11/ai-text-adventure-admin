@@ -24,6 +24,10 @@ class PromptModel: ObservableObject {
             return false
         }
     }
+    
+    func signOut() {
+        UserDefaults.standard.set(false, forKey: "signedIn")
+    }
 
     @MainActor
     func fetchPrompts() async {
